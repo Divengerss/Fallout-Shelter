@@ -51,7 +51,7 @@ public class PlayerDeath : MonoBehaviour
         animator.enabled = false;
 
         // Disable player root physics
-        playerRigidbody.velocity = Vector3.zero;
+        playerRigidbody.linearVelocity = Vector3.zero;
         playerRigidbody.isKinematic = true;
 
         // Activate ragdoll

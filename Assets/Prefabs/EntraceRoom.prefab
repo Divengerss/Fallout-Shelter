@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &143612243788314376
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1360446438748873596, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+      propertyPath: m_Name
+      value: EntraceRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849456070924319174, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.17302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849456070924319174, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849456070924319174, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -35.8456
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849456070924319174, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849456070924319174, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849456070924319174, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849456070924319174, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849456070924319174, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849456070924319174, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849456070924319174, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1360446438748873596, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3651784201003663492}
+  m_SourcePrefab: {fileID: 100100000, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+--- !u!1 &1377943434768438388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1360446438748873596, guid: c05507b888957e5419133f2a95e2b1c5, type: 3}
+  m_PrefabInstance: {fileID: 143612243788314376}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3651784201003663492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377943434768438388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ede45037577484e9df04813a03cbc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Room
+  RoomName: 
+  ProductionType: 0
+  ProductionAmount: 10
+  Cost: 100
+  ProductionInterval: 3
+  AssignedDwellers: []
+  MaxWorkers: 2

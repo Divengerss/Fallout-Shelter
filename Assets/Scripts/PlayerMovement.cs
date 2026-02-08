@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     void UpdateAnimation()
     {
-        Vector3 horizontalVelocity = rb.velocity;
+        Vector3 horizontalVelocity = rb.linearVelocity;
         horizontalVelocity.y = 0f;
 
         bool isMoving = horizontalVelocity.magnitude > movementThreshold;
@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
 
     void UpdateRotation()
     {
-        Vector3 horizontalVelocity = rb.velocity;
+        Vector3 horizontalVelocity = rb.linearVelocity;
         horizontalVelocity.y = 0f;
 
         if (horizontalVelocity.sqrMagnitude < 0.01f)
@@ -103,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!walkParticles) return;
 
-        Vector3 horizontalVelocity = rb.velocity;
+        Vector3 horizontalVelocity = rb.linearVelocity;
         horizontalVelocity.y = 0f;
 
         bool shouldPlay =
@@ -131,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
         if (!isGrounded || footstepClips.Length == 0 || !footstepSource)
             return;
 
-        Vector3 horizontalVelocity = rb.velocity;
+        Vector3 horizontalVelocity = rb.linearVelocity;
         horizontalVelocity.y = 0f;
 
         if (horizontalVelocity.magnitude < movementThreshold)
@@ -181,15 +181,15 @@ public class PlayerMovement : MonoBehaviour
             accelRate * Time.fixedDeltaTime
         );
 
-        Vector3 velocity = rb.velocity;
+        Vector3 velocity = rb.linearVelocity;
         velocity.x = currentVelocity.x;
         velocity.z = currentVelocity.z;
-        rb.velocity = velocity;
+        rb.linearVelocity = velocity;
     }
 
     void Jump()
     {
-        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
         animator.SetTrigger("Jump");
